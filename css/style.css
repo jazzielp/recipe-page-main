@@ -23,14 +23,14 @@ html {
     font-family: 'Outfit', sans-serif;
 }
 
-body {
-}
+
 
 .header,
 .main {
     min-width: 375px;
     max-width: 736px;
     width: 375px;
+    margin: 0 auto;
 }
 
 .picture__img {
@@ -81,6 +81,28 @@ body {
 
 .list__item span {
     color: var(--Wenge-Brown)
+}
+
+.ingredients {
+    margin: 32px 0;
+}
+
+.title {
+    font-family: 'Young Serif', serif;
+    font-size: 2.8rem;
+    color: var(--Brandy-Red);
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.list {
+    padding-left: 24px;
+}
+
+.list--center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
