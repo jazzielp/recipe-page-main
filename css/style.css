@@ -7,6 +7,7 @@
 :root {
 --Nutmeg: hsl(14, 45%, 36%);
 --Dark-Raspberry: hsl(332, 51%, 32%);
+--Brandy-Red: #854632;
 
 --White: hsl(0, 0%, 100%);
 --Rose-White: hsl(330, 100%, 98%);
@@ -14,6 +15,7 @@
 --Light-Grey: hsl(30, 18%, 87%);
 --Wenge-Brown: hsl(30, 10%, 34%);
 --Dark-Charcoal: hsl(24, 5%, 18%);
+--Snow: #FFF7FB;
 }
 
 html {
@@ -52,6 +54,33 @@ body {
     font-size: 1.6rem;
     color: var(--Wenge-Brown);
     line-height: 150%;
+}
+
+.preparation {
+    padding: 24px;
+    background-color: var(--Snow);
+    border-radius: 12px;
+}
+
+.preparation__title {
+    font-size: 2rem;
+    color: var(--Dark-Raspberry);
+}
+
+.preparation__list {
+    padding: 16px;
+    padding-bottom: 0;
+}
+
+.list__item {
+    color: var(--Brandy-Red);
+    font-size: 16px;
+    line-height: 150%;
+    padding:0 16px 8px 16px;
+}
+
+.list__item span {
+    color: var(--Wenge-Brown)
 }
 
 
