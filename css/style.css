@@ -5,17 +5,18 @@
 }
 
 :root {
---Nutmeg: hsl(14, 45%, 36%);
---Dark-Raspberry: hsl(332, 51%, 32%);
---Brandy-Red: #854632;
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --Brandy-Red: #854632;
 
---White: hsl(0, 0%, 100%);
---Rose-White: hsl(330, 100%, 98%);
---Eggshell: hsl(30, 54%, 90%);
---Light-Grey: hsl(30, 18%, 87%);
---Wenge-Brown: hsl(30, 10%, 34%);
---Dark-Charcoal: hsl(24, 5%, 18%);
---Snow: #FFF7FB;
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --Snow: #FFF7FB;
+    --White-Coffe: #E3DDD7;
 }
 
 html {
@@ -46,6 +47,8 @@ html {
 }
 
 .title-container__title {
+    font-family: 'Young Serif';
+    font-weight: normal;
     font-size: 3.6rem;
     color: var(--Dark-Charcoal);
 }
@@ -76,15 +79,17 @@ html {
     color: var(--Brandy-Red);
     font-size: 16px;
     line-height: 150%;
-    padding:0 16px 8px 16px;
+    padding: 0 16px 8px 16px;
 }
 
 .list__item span {
     color: var(--Wenge-Brown)
 }
 
-.ingredients {
-    margin: 32px 0;
+.ingredients,
+.instructions {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--White-Coffe);
 }
 
 .title {
@@ -97,6 +102,11 @@ html {
 
 .list {
     padding-left: 24px;
+    font-weight: bold;
+}
+
+.list span {
+    font-weight: normal;
 }
 
 .list--center {
@@ -105,7 +115,88 @@ html {
     justify-content: center;
 }
 
+.instructions {
+    border-bottom: 1px solid var(--White-Coffe);
+}
+
+.nutrion {
+    padding: 32px 0;
+}
+
+.nutrion__description {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--Wenge-Brown);
+    margin-bottom: 16px;
+}
+
+.nutrion__table {
+    width: 100%;
+    border-collapse: separate;
+    /* border-spacing: 0 10px; */
+    font-size: 16px;
+}
+
+.nutrion__table tr {
+    border-bottom: solid black 1px;
+}
+
+th,
+td {
+    padding: 16px;
+    /* Ajusta el valor según tus preferencias */
+    border-bottom: 1px solid var(--White-Coffe);
+    /* Borde para mejorar la legibilidad */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+tr:last-child th,
+tr:last-child td {
+    border-bottom: none;
+}
 
 
+.nutrion__table th {
+    font-weight: normal;
+    color: var(--Wenge-Brown);
+}
 
+.nutrion__table td {
+    font-weight: bold;
+    color: var(--Brandy-Red);
+}
 
+@media screen and (min-width: 700px) {
+
+    .body {
+       background-color: var(--Eggshell); 
+    }
+
+    .header,
+    .main {
+        background-color: var(--White);
+        width: 736px;
+    }
+
+    .header {
+        margin-top: 100px;
+        margin-bottom: 0;
+        padding: 40px;
+        border-radius: 24px 24px 0 0 ;
+    }
+
+    .main {
+        margin-bottom: 100px;
+        border-radius: 0 0 24px 24px;
+
+    }
+
+    .picture__img {
+        border-radius: 12px;
+    }
+
+    .title-container__title {
+        margin-top: 0;
+    }
+}
